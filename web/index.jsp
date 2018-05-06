@@ -17,9 +17,5 @@
   </frameset>
 
 
-<%
-  request
-
-%>
 
 </html>

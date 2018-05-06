@@ -20,7 +20,7 @@ public class OrderDaoImpl implements zhongfucheng.dao.OrderDao {
     @Override
     public void addOrder(Order order) {
         QueryRunner queryRunner = new QueryRunner(Utils2DB.getDataSource());
-        String sql1 = "INSERT INTO orders(id,ordertime,user_id,state,price) VALUES(?,?,?,?,?)";
+        String sql1 = "INSERT INTO orders(id,date,user_id,state,price) VALUES(?,?,?,?,?)";
         try {
             //订单的基本信息
             queryRunner.update(sql1, new Object[]{order.getId(), order.getOrdertime(), order.getUser_id(), order.isState(), order.getPrice()});

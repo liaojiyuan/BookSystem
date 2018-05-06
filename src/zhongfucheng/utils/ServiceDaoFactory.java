@@ -28,7 +28,6 @@ public class ServiceDaoFactory {
     //需要判断该用户是否有权限
     public <T> T createDao(String className, Class<T> clazz, final User user) {
 
-        System.out.println("添加分类进来了！");
 
         try {
             //得到该类的类型

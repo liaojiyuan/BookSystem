@@ -34,7 +34,7 @@
         <c:forEach items="${list}" var="order">
             <tr>
                 <td>${order.user_id}</td>
-                <td>${order.ordertime}</td>
+                <td>${order.date}</td>
                 <td>${order.state==false?"未发货":"已发货"}</td>
                 <td>${order.price}</td>
                 <td>
